@@ -536,6 +536,10 @@ fill: var(--light-cloud);
 
 }
 
+.subscribe-form {
+    display: flex;
+    gap: 24px; 
+}
 .sbcr-input {
     width: 264px; 
     height: 40px; 
@@ -561,7 +565,6 @@ fill: var(--light-cloud);
     letter-spacing: 0.32px;
     color: var(--white-background);
     margin-bottom: 16px;
-    padding-left: 24px;
 }
 .subscribe-button {
     background-color: var(--primary-brand-iris);
@@ -609,14 +612,15 @@ fill: var(--light-cloud);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    width: 408px;
+    max-width: 408px;
+    width: 100%;
     min-height: 584px;
-    background: var(--dairy-modal-background);
+    transform: translate(-50%, -50%) scale(1);
+    padding: 72px 24px 24px 24px;
+    background-color: var(--dairy-modal-background);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px;
 }
 .modal-button {
     position: absolute;
@@ -656,47 +660,49 @@ fill: var(--light-cloud);
 .form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 8px;
-    padding-left: 24px;
+    padding: 8px;
+    max-width: 360px;
+    border: none;
 }
 
 .form-title {
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+    width: 360px;
     font-size: 16px;
-    font-family: Roboto;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.32px;
-    text-align: center;
-    color: var(--dark-navy-blue);
-    padding-top: 72px;
-    margin-bottom: 16px;
-    
+    letter-spacing: 0.02em;
+    color: var(--dark-navy-blue);  
 }
+
+
 .form-container {
     margin-bottom: 8px;
 }
 .form-label {
+    color: var(--subtle-text-light-slate);
+    display: block;
+    margin-bottom: 4px;
     font-size: 12px;
-    font-family: Roboto;
     line-height: 1.17;
     letter-spacing: 0.48px;
-    color: var(--subtle-text-light-slate);
-    display: block; 
-    margin-bottom: 4px;
-    gap: 24px;
 }  
 .form-wrapper {
-    position: relative;
 }
+
 .form-input {
-    width: 100%; 
     height: 40px;
     border-radius: 4px;
     border: 1px solid var(--dark-navy-blue); 
+    outline: transparent;
     background-color: transparent;
-    outline: transparent; 
     padding-left: 38px;
+    width: 100%;
+    color: var(--dark-navy-blue);
+    font-size: 18px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus {
@@ -716,6 +722,15 @@ fill: var(--light-cloud);
     align-items: center;
     justify-content: center;
     fill: transparent;
+}
+
+.icon-modal{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus  {
     fill: var(--primary-brand-iris);
@@ -756,35 +771,21 @@ fill: var(--light-cloud);
 }
 
 .form-button {
-    display: inline-block;
-    margin: 0 auto;
-    border: none;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    display: block;
-    border: none;
-    border-radius: 4px;
-    display: inline-flex;
+    align-self: center;
     padding: 16px 32px;
-    align-items: flex-start;
-    gap: 10px;
+    display: block;
+    color: var(--white-background);
+    background-color: var(--primary-brand-iris);
     height: 56px;
     min-width: 169px;
+    border: none;
     cursor: pointer;
-    background-color: var(--primary-brand-iris);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    flex-direction: column;
-    justify-content: center;
-    color: var(--white-background);
-    text-align: center;
-    font-size: 16px;
-    font-family: Roboto;
+    border-radius: 4px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.64px;
+    letter-spacing: 0.04em;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
         /* Portfolio*/
 
@@ -886,7 +887,7 @@ fill: var(--light-cloud);
 
 .project-card-details {
     padding: 32px 16px;
-    border: 1px solid var(--accent-cornflower);
+    border: 1px solid var(--accent-cornflower);l
     border-top: none;
 }
 
