@@ -684,7 +684,7 @@ fill: var(--light-cloud);
     color: var(--subtle-text-light-slate);
     display: block; 
     margin-bottom: 4px;
-    
+    gap: 24px;
 }  
 .form-wrapper {
     position: relative;
