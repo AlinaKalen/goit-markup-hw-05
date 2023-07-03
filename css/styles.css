@@ -775,6 +775,16 @@ fill: var(--light-cloud);
     margin-bottom: 24px;
 }
 
+.checkbox-text {
+    margin-top: 8px;
+    font-size: 12px;
+    font-family: Roboto;
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+    color: var(--subtle-text-light-slate);
+    min-height: 16px;  
+}
+
 .checkbox-prop {
     width: 16px;
     height: 16px;
@@ -788,16 +798,6 @@ fill: var(--light-cloud);
     cursor: pointer;
 
 }
-.checkbox-text {
-    margin-top: 8px;
-    font-size: 12px;
-    font-family: Roboto;
-    line-height: 1.17;
-    letter-spacing: 0.48px;
-    color: var(--subtle-text-light-slate);
-    min-height: 16px;
-    
-}
 .checkbox-text-link {
     margin-top: 8px;
     font-size: 12px;
@@ -808,12 +808,7 @@ fill: var(--light-cloud);
     color: var(--primary-brand-iris);
 }
 .checkbox {
-    width: 16px;
-    height: 16px;
-    border-radius: 2px;
-    border: 1px solid var(--navy-blue-modal-overlay);
-    margin-top: 8px;
-    margin-right: 8px;
+   
 }
 
 .form-button {
@@ -838,17 +833,13 @@ fill: var(--light-cloud);
        background-color: var(--pressed-state-ocean);
      }
 
-.checkbox-text:checked + .checkbox-prop {
+.checkbox:checked + .checkbox-text .checkbox-prop {
     background-color: var(--pressed-state-ocean);
     fill: var(--light-cloud);
     border: none;
 }
 
-.checkbox:checked {
-    background-color: var(--pressed-state-ocean);
-    fill: var(--light-cloud);
-    border: none;
-}
+
 
 
         /* Portfolio*/
