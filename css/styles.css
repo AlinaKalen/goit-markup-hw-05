@@ -840,9 +840,8 @@ fill: var(--light-cloud);
 }
 
 .checkbox:focus + .checkbox-text .checkbox-prop {
-    background-color: var(--pressed-state-ocean);
-    fill: var(--light-cloud);
-    border: none;
+    border-color: var(--pressed-state-ocean);
+ 
 }
 
 
