@@ -546,20 +546,20 @@ fill: var(--light-cloud);
     
 }
 .sbcr-input {
-    width: 264px; 
-    height: 40px; 
-    border: 1px solid var(--white-background);
+    width: 264px;
+    height: 40px;
+    padding: 8px 16px;
+    color: var(--white-background);
     background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid var(--white-background);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    outline: transparent;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    padding-left: 16px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    color: var(--white-background);
-   
 }
-
 .placeholder {
     color: var(--white-background);
 }
